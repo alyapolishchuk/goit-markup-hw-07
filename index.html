@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!-- transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); -->
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,34 +17,35 @@
     <!--Навігація-->
     <header class="header">
         <div class="container">
-            <nav class="nav-container">
-                <a href="./index.html" class="logo top">
-                    Web<span class="logo-name">Studio</span>
+            <nav class="nav">
+                <a href="./index.html" class="logo nav__logo">
+                    Web<span class="logo__name">Studio</span>
                 </a>
                 <ul class="list site-nav">
-                    <li class="site-nav-item">
-                        <a href="./index.html" class="link active"> Студия </a>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link site-nav__link--current"> Студия </a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="./portfolio.html" class="link"> Портфолио </a>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link site-nav__link"> Портфолио </a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="" class="link"> Контакты </a>
+                    <!-- site-nav__link    "site-nav__link--current"    -->
+                    <li class="site-nav__item">
+                        <a href="" class="link site-nav__link"> Контакты </a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list top-adress-list">
-                <li class="site-nav-item">
-                    <a href="mailto:info@devstudio.com" class="adress-nav">
-                        <svg class="icon-nav" width="16" height="12">
+            <ul class="list site-adress">
+                <li class="site-adress__item">
+                    <a href="mailto:info@devstudio.com" class="site-adress__link">
+                        <svg class="site-adress__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mail">
                             </use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="site-nav-item">
-                    <a href="tel:+380961111111" class="adress-nav">
-                        <svg class="icon-nav" width="10" height="16">
+                <li class="site-adress__item">
+                    <a href="tel:+380961111111" class="site-adress__link">
+                        <svg class="site-adress__icon" width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-phone">
                             </use>
                         </svg>
@@ -59,11 +59,11 @@
         <!-- Ефективні рішення для вашого бізнесу-->
         <section class="decisions">
             <div class="container">
-                <h1 class="decisions-title">
+                <h1 class="decisions__title">
                     Эффективные решения <!--<br />-->
                     для вашего бизнеса
                 </h1>
-                <button class="decisions-button" type="button" data-modal-open>Заказать услугу</button>
+                <button class="decisions__button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Переваги-->
@@ -450,7 +450,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- Бекдроп -->
     <div class="backdrop is-hidden" data-modal>
         <form class="modal-form" name="modal-form" autocomplete="on">
             <button class="modal-button" type="button" data-modal-close>

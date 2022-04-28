@@ -17,34 +17,35 @@
     <!--Навігація-->
     <header class="header">
         <div class="container">
-            <nav class="nav-container">
-                <a href="./index.html" class="logo top">
-                    Web<span class="logo-name">Studio</span>
+            <nav class="nav">
+                <a href="./index.html" class="logo nav__logo">
+                    Web<span class="logo__name">Studio</span>
                 </a>
                 <ul class="list site-nav">
-                    <li class="site-nav-item">
-                        <a href="./index.html" class="link"> Студия </a>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="link site-nav__link"> Студия </a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="./portfolio.html" class="link active"> Портфолио </a>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link site-nav__link site-nav__link--current"> Портфолио </a>
                     </li>
-                    <li class="site-nav-item">
-                        <a href="" class="link"> Контакты </a>
+                    <!-- site-nav__link    "site-nav__link--current"    -->
+                    <li class="site-nav__item">
+                        <a href="" class="link site-nav__link"> Контакты </a>
                     </li>
                 </ul>
             </nav>
-            <ul class="list top-adress-list">
-                <li class="site-nav-item">
-                    <a href="mailto:info@devstudio.com" class="adress-nav">
-                        <svg class="icon-nav" width="16" height="12">
+            <ul class="list site-adress">
+                <li class="site-adress__item">
+                    <a href="mailto:info@devstudio.com" class="site-adress__link">
+                        <svg class="site-adress__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-mail">
                             </use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class="site-nav-item">
-                    <a href="tel:+380961111111" class="adress-nav">
-                        <svg class="icon-nav" width="10" height="16">
+                <li class="site-adress__item">
+                    <a href="tel:+380961111111" class="site-adress__link">
+                        <svg class="site-adress__icon" width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-phone">
                             </use>
                         </svg>
@@ -177,7 +178,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-title-list design">
+                <li class="portfolio-title-list">
                     <a href="" class="portfolio-link">
                         <div class="portfolio-overlay">
                             <img src="./images/portfolio3-1.jpg" alt="ноутбук" width="370" />
@@ -193,7 +194,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-title-list marketing">
+                <li class="portfolio-title-list">
                     <a href="" class="portfolio-link">
                         <div class="portfolio-overlay">
                             <img src="./images/portfolio3-2.jpg" alt="ноутбук" width="370" />
@@ -209,7 +210,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="portfolio-title-list business">
+                <li class="portfolio-title-list">
                     <a href="" class="portfolio-link">
                         <div class="portfolio-overlay">
                             <img src="./images/portfolio3-3.jpg" alt="ноутбук" width="370" />
